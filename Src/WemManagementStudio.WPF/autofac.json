@@ -1,0 +1,29 @@
+{
+  "components": [
+    {
+      "type": "WemManagementStudio.Wpf.App,WemManagementStudio.Wpf",
+      "services": 
+      [
+        {
+          "type": "WemManagementStudio.Wpf.IApp,WemManagementStudio.Wpf",
+        }
+      ]
+    }, 
+    {
+      "type": "WemManagementStudio.Wpf.ViewModels.MainViewModel,WemManagementStudio.Wpf",
+      "services": [
+        {
+          "type": "WemManagementStudio.Wpf.ViewModels.IMainViewModel,WemManagementStudio.Wpf",
+        }
+      ]
+    },
+    {
+      "type": " WemManagementStudio.Wpf.Views.MainView,  WemManagementStudio.Wpf",
+      "services": [
+        {
+          "type": " WemManagementStudio.Wpf.Views.IMainView,  WemManagementStudio.Wpf",
+        }
+      ]
+    }
+  ]
+}

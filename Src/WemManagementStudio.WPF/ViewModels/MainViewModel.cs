@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace WemManagementStudio.Wpf.ViewModels
 {
-    public sealed class MainViewModel : INotifyPropertyChanged
+    public sealed class MainViewModel : IMainViewModel, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -11,5 +11,9 @@ namespace WemManagementStudio.Wpf.ViewModels
         ////{
         ////    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         ////}
+        public void TestMethod()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
