@@ -1,0 +1,15 @@
+* text=auto
+
+# Text
+*.cs text eol=crlf
+
+# Binary
+*.exe binary
+*.dll binary
+*.sdf binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.gif binary
+*.bmp binary
+*.psd binary
