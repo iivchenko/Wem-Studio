@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio", "WemManagementStudio\WemManagementStudio.csproj", "{63E3D447-841C-4121-BC4E-E3A3DC73A502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.WPF", "WemManagementStudio.WPF\WemManagementStudio.WPF.csproj", "{870C2F56-6984-48F5-B821-400FE4AE7DBA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
