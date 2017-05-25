@@ -34,6 +34,10 @@
     <CodeAnalysisRuleSet>..\CodeStyle\CA.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\Packages\NLog.4.4.9\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="StyleCop">
       <HintPath>..\..\Packages\StyleCop.4.7.55\lib\net35\StyleCop.dll</HintPath>
       <Private>True</Private>
