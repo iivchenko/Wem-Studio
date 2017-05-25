@@ -1,3 +1,5 @@
+# Exclude VS
+.vs/
 # Cake binaries
 Build/tools/
 Build/.dotnet/
