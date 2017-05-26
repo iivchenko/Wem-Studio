@@ -156,13 +156,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Entrance.cs" />
     <Compile Include="IApp.cs" />
+    <Compile Include="ViewModels\AddMachineViewModel.cs" />
     <Compile Include="ViewModels\IMainViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\AddMachineView.xaml.cs">
       <DependentUpon>AddMachineView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\IAddMachineViewModel.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
