@@ -2,6 +2,6 @@
 {
     public interface IMainViewModel
     {
-        void TestMethod();
+        string Path { get; set; }
     }
 }

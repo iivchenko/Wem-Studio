@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WemManagementStudio.Wpf.ViewModels;
 
 namespace WemManagementStudio.Wpf.Views
 {
@@ -10,11 +11,6 @@ namespace WemManagementStudio.Wpf.Views
         public MainView()
         {
             InitializeComponent();
-        }
-
-        public void TestMethod()
-        {
-            throw new System.NotImplementedException();
         }
 
         private void MenuItem_OnClick(object sender, RoutedEventArgs e)

@@ -2,6 +2,6 @@
 {
     public interface IMainView
     {
-        void TestMethod();
+        object DataContext { get; set; }
     }
 }

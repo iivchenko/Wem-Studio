@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using WemManagementStudio.Wpf.ViewModels;
 using WemManagementStudio.Wpf.Views;
 
@@ -14,13 +15,28 @@ namespace WemManagementStudio.Wpf
 
         public App(IMainView mainView, IMainViewModel mainViewModel)
         {
+            if (mainViewModel == null)
+            {
+                throw new ArgumentNullException(nameof(mainViewModel));
+            }
+
+            if (mainView == null)
+            {
+                throw new ArgumentNullException(nameof(mainView));
+            }
+
             _mainView = mainView;
             _mainViewModel = mainViewModel;
+        }
 
-            StartupUri = new System.Uri("Views/MainView.xaml", System.UriKind.Relative);
+        public int Run()
+        {
+            return base.Run((Window) _mainView);
+        }
 
-            _mainView.ToString();
-            _mainViewModel.ToString();
+        public void Initialize()
+        {
+            _mainView.DataContext = _mainViewModel;
         }
     }
 }

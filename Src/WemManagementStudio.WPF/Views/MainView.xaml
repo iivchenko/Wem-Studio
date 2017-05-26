@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WemManagementStudio.Wpf"
+        xmlns:vms="clr-namespace:WemManagementStudio.Wpf.ViewModels"
         mc:Ignorable="d"
         Title="MainView" 
         Height="375"
@@ -35,9 +36,9 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-                <DockPanel Grid.Row="0" Margin="5,5,5,5" >
-                    <Button Name="SelectDirButton" Margin="5,5,5,5" Width="20" Height="20" DockPanel.Dock ="Right">...</Button>
-                    <TextBox Margin="5,5,5,5">Test</TextBox>
+                <DockPanel Grid.Row="0" Margin="5,5,0,5" HorizontalAlignment="Left" Width="292" >
+                    <Button Name="SelectDirButton" Margin="5,5,5,5" Width="20" Height="20" DockPanel.Dock ="Right" >...</Button>
+                    <TextBox Margin="5,5,5,5" Text="{Binding Path=(vms:IMainViewModel.Path), Mode=TwoWay}"/>
                 </DockPanel>
 
                 <GroupBox Grid.Row="1" Header="Console" Margin="5,5,5,5">

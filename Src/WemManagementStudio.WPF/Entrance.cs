@@ -24,6 +24,7 @@ namespace WemManagementStudio.Wpf
             using (var scope = builder.Build().BeginLifetimeScope())
             {
                 var app = scope.Resolve<IApp>();
+                app.Initialize();
                 app.Run();
             }
         }

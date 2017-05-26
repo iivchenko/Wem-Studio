@@ -5,15 +5,25 @@ namespace WemManagementStudio.Wpf.ViewModels
 {
     public sealed class MainViewModel : IMainViewModel, INotifyPropertyChanged
     {
+        private string _path;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
-        ////private void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        ////{
-        ////    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        ////}
-        public void TestMethod()
+        public string Path
         {
-            throw new System.NotImplementedException();
+            get { return _path; }
+
+            set
+            {
+                _path = value;
+                
+                OnPropertyChanged();
+            }
+        }
+
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
