@@ -165,7 +165,7 @@
     <Compile Include="Views\AddMachineView.xaml.cs">
       <DependentUpon>AddMachineView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\IAddMachineViewModel.cs" />
+    <Compile Include="ViewModels\IAddMachineViewModel.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>

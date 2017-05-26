@@ -15,7 +15,10 @@ namespace WemManagementStudio.Wpf.Views
 
         private void MenuItem_OnClick(object sender, RoutedEventArgs e)
         {
-            var add = new AddMachineView();
+            var add = new AddMachineView
+            {
+                DataContext = new AddMachineViewModel(((IMainViewModel)DataContext).Machines)
+            };
 
             add.ShowDialog();
         }

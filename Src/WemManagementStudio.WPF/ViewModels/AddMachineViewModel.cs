@@ -1,8 +1,8 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using WemManagementStudio.Wpf.Common;
-using WemManagementStudio.Wpf.Views;
 
 namespace WemManagementStudio.Wpf.ViewModels
 {
@@ -14,7 +14,7 @@ namespace WemManagementStudio.Wpf.ViewModels
         private string _pass;
         private MachineType _type;
 
-        public AddMachineViewModel(Settings settings)
+        public AddMachineViewModel(ObservableCollection<Machine> machines)
         {
             AddCommand = new RelayCommand(
                 o =>
@@ -28,9 +28,7 @@ namespace WemManagementStudio.Wpf.ViewModels
                         MachineType = Type
                     };
 
-                    settings.Machines.Add(machine);
-
-                    Serializer.Save(settings);
+                    machines.Add(machine);
                 },
                 o =>
                 {
@@ -44,11 +42,11 @@ namespace WemManagementStudio.Wpf.ViewModels
                     };
 
                     return
-                        !settings.Machines.Contains(machine)
-                        || !string.IsNullOrWhiteSpace(DisplayName)
-                        || !string.IsNullOrWhiteSpace(Host)
-                        || !string.IsNullOrWhiteSpace(User)
-                        || !string.IsNullOrWhiteSpace(Pass);
+                        !machines.Contains(machine)
+                        && !string.IsNullOrWhiteSpace(DisplayName)
+                        && !string.IsNullOrWhiteSpace(Host)
+                        && !string.IsNullOrWhiteSpace(User)
+                        && !string.IsNullOrWhiteSpace(Pass);
                 });
         }
 

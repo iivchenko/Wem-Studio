@@ -14,7 +14,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Menu Grid.Row="0" IsMainMenu="True">
@@ -56,7 +56,7 @@
                                     <Setter Property="Width" Value="75"/>
                                 </Style>
                             </StackPanel.Resources>
-                            <ComboBox Name="ConsoleMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                            <ComboBox Name="ConsoleMachineComboBox" Width="100" Margin="5,5,5,5" ItemsSource="{Binding Path=(vms:IMainViewModel.Consoles)}" SelectedItem="{Binding Path=(vms:IMainViewModel.SelectedConsole)}"/>
                             <Button Name="ResetConsoleButton" Content="Reset"/>
                             <Button Name="DeployConsoleButton" Content="Deploy"/>
                         </StackPanel>
@@ -78,7 +78,7 @@
                                     <Setter Property="Width" Value="75"/>
                                 </Style>
                             </StackPanel.Resources>
-                            <ComboBox Name="BrokerMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                            <ComboBox Name="BrokerMachineComboBox" Width="100" Margin="5,5,5,5" ItemsSource="{Binding Path=(vms:IMainViewModel.Brokers)}" SelectedItem="{Binding Path=(vms:IMainViewModel.SelectedBroker)}"/>
                             <Button Name="ResetBrokerButton" Content="Reset"/>
                             <Button Name="DeployBrokerButton" Content="Deploy"/>
                         </StackPanel>
@@ -100,7 +100,7 @@
                                     <Setter Property="Width" Value="75"/>
                                 </Style>
                             </StackPanel.Resources>
-                            <ComboBox Name="AgentMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                            <ComboBox Name="AgentMachineComboBox" Width="100" Margin="5,5,5,5" ItemsSource="{Binding Path=(vms:IMainViewModel.Agents)}" SelectedItem="{Binding Path=(vms:IMainViewModel.SelectedAgent)}"/>
                             <Button Name="ResetAgentButton" Content="Reset"/>
                             <Button Name="DeployAgentButton" Content="Deploy"/>
                         </StackPanel>

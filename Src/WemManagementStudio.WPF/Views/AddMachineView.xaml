@@ -4,11 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WemManagementStudio.Wpf.Views"
+        xmlns:vms="clr-namespace:WemManagementStudio.Wpf.ViewModels"
+        xmlns:wemms="clr-namespace:WemManagementStudio;assembly=WemManagementStudio"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="AddMachineView"
-        Height="215"
+        Height="225"
         Width="300"
         ResizeMode="NoResize">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="wemms:MachineType"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -46,19 +56,19 @@
             </Grid.RowDefinitions>
 
             <TextBlock Grid.Column="0" Grid.Row="0" Text="Display Name:"/>
-            <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch"/>
+            <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Text="{Binding Path=(vms:IAddMachineViewModel.DisplayName), Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <TextBlock Grid.Column="0" Grid.Row="1" Text="Host:"/>
-            <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch"/>
+            <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Text="{Binding Path=(vms:IAddMachineViewModel.Host), Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <TextBlock Grid.Column="0" Grid.Row="2" Text="User"/>
-            <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch"/>
+            <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Text="{Binding Path=(vms:IAddMachineViewModel.User), Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <TextBlock Grid.Column="0" Grid.Row="3" Text="Pass"/>
-            <PasswordBox Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch"/>
+            <TextBox Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Text="{Binding Path=(vms:IAddMachineViewModel.Pass), Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <TextBlock Grid.Column="0" Grid.Row="4" Text="Type:"/>
-            <ComboBox Grid.Column="1" Grid.Row="4" />
+            <ComboBox Grid.Column="1" Grid.Row="4" ItemsSource="{Binding Source={StaticResource dataFromEnum}}" SelectedItem="{Binding Path=(vms:IAddMachineViewModel.Type)}"/>
         </Grid>
         <Grid Grid.Row="1">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -68,8 +78,7 @@
                         <Setter Property="Width" Value="75"></Setter>
                     </Style>
                 </StackPanel.Resources>
-                <Button>Add</Button>
-                <Button>Cancel</Button>
+                <Button Command="{Binding Path=(vms:IAddMachineViewModel.AddCommand)}">Add</Button>
             </StackPanel>
         </Grid>
     </Grid>

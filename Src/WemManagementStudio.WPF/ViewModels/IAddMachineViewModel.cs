@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Windows.Input;
 
-namespace WemManagementStudio.Wpf.Views
+namespace WemManagementStudio.Wpf.ViewModels
 {
     public interface IAddMachineViewModel : INotifyPropertyChanged
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace WemManagementStudio
@@ -10,11 +11,11 @@ namespace WemManagementStudio
         {
             Path = string.Empty;
 
-            Machines = new Collection<Machine>();
+            Machines = new List<Machine>();
         }
         public string Path { get; set; }
 
-        public Collection<Machine> Machines { get; }
+        public List<Machine> Machines { get; set; }
     }
 
     [Serializable]
@@ -72,7 +73,7 @@ namespace WemManagementStudio
 
         public override string ToString()
         {
-            return $"{Name} ({Host})";
+            return Name;
         }
     }
 }
