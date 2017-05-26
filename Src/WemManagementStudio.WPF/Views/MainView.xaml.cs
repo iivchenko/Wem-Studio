@@ -16,5 +16,12 @@ namespace WemManagementStudio.Wpf.Views
         {
             throw new System.NotImplementedException();
         }
+
+        private void MenuItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            var add = new AddMachineView();
+
+            add.ShowDialog();
+        }
     }
 }
