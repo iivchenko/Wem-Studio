@@ -5,8 +5,118 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WemManagementStudio.Wpf"
         mc:Ignorable="d"
-        Title="MainView" Height="350" Width="525">
+        Title="MainView" 
+        Height="360"
+        Width="800"
+        MinHeight="360" 
+        MinWidth="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0" Margin="5,5,5,5" >
+                <Button Name="SelectDirButton" Margin="5,5,5,5" Width="20" Height="20" DockPanel.Dock ="Right">...</Button>
+                <TextBox Margin="5,5,5,5">Test</TextBox>
+            </DockPanel>
+
+            <GroupBox Grid.Row="1" Header="Console" Margin="5,5,5,5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Name="ConsoleStatusTextBlock" Margin="5,5,5,5">Status:</TextBlock>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <StackPanel.Resources>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Margin" Value="5,5,5,5"/>
+                                <Setter Property="Width" Value="75"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <ComboBox Name="ConsoleMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                        <Button Name="ResetConsoleButton" Content="Reset"/>
+                        <Button Name="DeployConsoleButton" Content="Deploy"/>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Row="2" Header="Broker" Margin="5,5,5,5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Name="BrokerStatusTextBlock" Margin="5,5,5,5">Status:</TextBlock>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <StackPanel.Resources>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Margin" Value="5,5,5,5"/>
+                                <Setter Property="Width" Value="75"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <ComboBox Name="BrokerMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                        <Button Name="ResetBrokerButton" Content="Reset"/>
+                        <Button Name="DeployBrokerButton" Content="Deploy"/>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Row="3" Header="Agent" Margin="5,5,5,5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Name="AgentStatusTextBlock" Margin="5,5,5,5">Status:</TextBlock>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <StackPanel.Resources>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Margin" Value="5,5,5,5"/>
+                                <Setter Property="Width" Value="75"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <ComboBox Name="AgentMachineComboBox" Width="100" Margin="5,5,5,5"/>
+                        <Button Name="ResetAgentButton" Content="Reset"/>
+                        <Button Name="DeployAgentButton" Content="Deploy"/>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0">
+                <RichTextBox IsReadOnly="True" Margin="10,10,10,10"/>
+            </DockPanel>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,0,5,0" >
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type CheckBox}">
+                        <Setter Property="Margin" Value="5,5,5,5"/>
+                    </Style>
+                </StackPanel.Resources>
+                <CheckBox Name="DebugLogCheckBox" IsChecked="True">Debug</CheckBox>
+                <CheckBox Name="ErrorLogCheckBox" IsChecked="True">Error</CheckBox>
+                <CheckBox Name="WarningLogCheckBox" IsChecked="True">Warning</CheckBox>
+                <CheckBox Name="InfoLogCheckBox" IsChecked="True">Info</CheckBox>
+                <ComboBox Name ="MachinesComboBox" Margin="5,5,5,5" Width="100"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
