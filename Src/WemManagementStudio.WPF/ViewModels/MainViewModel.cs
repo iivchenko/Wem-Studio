@@ -169,7 +169,7 @@ namespace WemManagementStudio.Wpf.ViewModels
 
             OnPropertyChanged("IsMonitorEnabled");
             
-            LogInfo("File Monitor Stoped");
+            LogInfo("File Monitor Stopped");
         }
 
         private void LogInfo(string message)
