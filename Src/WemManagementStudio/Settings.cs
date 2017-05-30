@@ -11,11 +11,12 @@ namespace WemManagementStudio
         {
             Path = string.Empty;
 
-            Machines = new List<Machine>();
+            Machines = new Collection<Machine>();
         }
         public string Path { get; set; }
 
-        public List<Machine> Machines { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly", Justification = "Serrialization")]
+        public Collection<Machine> Machines { get; set; }
     }
 
     [Serializable]
