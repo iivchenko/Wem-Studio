@@ -2,6 +2,7 @@
 using Autofac;
 using Autofac.Configuration;
 using Microsoft.Extensions.Configuration;
+using WemManagementStudio.Wpf.Initialization;
 
 namespace WemManagementStudio.Wpf
 {
@@ -13,13 +14,23 @@ namespace WemManagementStudio.Wpf
         [STAThread]
         public static void Main()
         {
-            var config = new ConfigurationBuilder();
-            config.AddJsonFile("autofac.json");
+            var configInit = new ConfigurationBuilder();
+            var configViewModel = new ConfigurationBuilder();
+            var configData = new ConfigurationBuilder();
 
-            
-            var module = new ConfigurationModule(config.Build());
+            configInit.AddJsonFile(@"autofac\init.json");
+            configViewModel.AddJsonFile(@"autofac\views.json");
+            configData.AddJsonFile(@"autofac\data.json");
+
+            var moduleInit = new ConfigurationModule(configInit.Build());
+            var moduleViewModel = new ConfigurationModule(configViewModel.Build());
+            var moduleData = new ConfigurationModule(configData.Build());
+
             var builder = new ContainerBuilder();
-            builder.RegisterModule(module);
+
+            builder.RegisterModule(moduleInit);
+            builder.RegisterModule(moduleViewModel);
+            builder.RegisterModule(moduleData);
 
             using (var scope = builder.Build().BeginLifetimeScope())
             {

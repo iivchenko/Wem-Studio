@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WemManagementStudio")]
+[assembly: AssemblyTitle("WemManagementStudio.Data")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WemManagementStudio")]
+[assembly: AssemblyProduct("WemManagementStudio.Data")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("63e3d447-841c-4121-bc4e-e3a3dc73a502")]
+[assembly: Guid("e7643714-20cc-41ca-9521-2167fb326f02")]
 
 // Version information for an assembly consists of the following four values:
 //
