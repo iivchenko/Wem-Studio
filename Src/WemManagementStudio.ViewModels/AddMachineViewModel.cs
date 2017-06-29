@@ -105,7 +105,7 @@ namespace WemManagementStudio.ViewModels
 
         public IEnumerable<MachineType> MachineType { get; }
 
-        public MachineType ActiveType
+        public MachineType ActiveMachineType
         {
             get
             {
@@ -116,7 +116,7 @@ namespace WemManagementStudio.ViewModels
             {
                 _machine.MachineType = value;
 
-                NotifyOfPropertyChange(() => ActiveType);
+                NotifyOfPropertyChange(() => ActiveMachineType);
                 NotifyOfPropertyChange(() => CanAdd);
             }
         }

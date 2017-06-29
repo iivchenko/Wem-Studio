@@ -60,7 +60,7 @@
 
             <TextBlock Grid.Column="0" Grid.Row="5" Text="MachineType:"/>
 
-            <ComboBox Grid.Column="1" Grid.Row="5" x:Name="Type"/>
+            <ComboBox Grid.Column="1" Grid.Row="5" x:Name="MachineType"/>
         </Grid>
         <Grid Grid.Row="1">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
