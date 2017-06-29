@@ -54,7 +54,7 @@
                 <TextBlock Grid.Column="1" Grid.Row="4" x:Name="Path"/>
 
                 <TextBlock Grid.Column="0" Grid.Row="5" Text="MachineType: "/>
-                <TextBlock Grid.Column="1" Grid.Row="5" x:Name="Type"/>
+                <TextBlock Grid.Column="1" Grid.Row="5" x:Name="MachineType"/>
 
                 <Button Grid.Column="1" Grid.Row="6" Content="Deploy" x:Name="Deploy"/>
                 
