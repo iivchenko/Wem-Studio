@@ -2,7 +2,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Security.Permissions;
 using Microsoft.Win32.SafeHandles;
 
-namespace WemManagementStudio.Utilities
+namespace WemStudio.Utilities
 {
     [SecurityPermission(SecurityAction.InheritanceDemand, UnmanagedCode = true)]
     [SecurityPermission(SecurityAction.Demand, UnmanagedCode = true)]

@@ -1,4 +1,4 @@
-﻿namespace WemManagementStudio.ViewModels
+﻿namespace WemStudio.ViewModels
 {
     public sealed class LogViewModel
     {

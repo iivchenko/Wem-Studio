@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 
-namespace WemManagementStudio.Utilities
+namespace WemStudio.Utilities
 {
     internal static class NativeMethods
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace WemManagementStudio.Data
+namespace WemStudio.Data
 {
     public interface IRepository<TEntity, in TKey>
     {

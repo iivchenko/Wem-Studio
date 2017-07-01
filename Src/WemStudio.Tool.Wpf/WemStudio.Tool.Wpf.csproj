@@ -7,8 +7,8 @@
     <ProjectGuid>{870C2F56-6984-48F5-B821-400FE4AE7DBA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WemManagementStudio.Wpf</RootNamespace>
-    <AssemblyName>WemManagementStudio.Wpf</AssemblyName>
+    <RootNamespace>WemStudio.Tool.Wpf</RootNamespace>
+    <AssemblyName>WemStudio</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,7 @@
     <CodeAnalysisRuleSet>..\CodeStyle\CA.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>WemManagementStudio.Wpf.Entrance</StartupObject>
+    <StartupObject>WemStudio.Tool.Wpf.Entrance</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\Main.ico</ApplicationIcon>

@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
+using WemStudio.Domain;
 
-namespace WemManagementStudio.Data
+namespace WemStudio.Data
 {
     public sealed class VMContext : DbContext
     {

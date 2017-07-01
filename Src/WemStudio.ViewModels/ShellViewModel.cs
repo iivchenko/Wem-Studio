@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using Caliburn.Micro;
-using WemManagementStudio.Data;
+using WemStudio.Data;
+using WemStudio.Domain;
 
-namespace WemManagementStudio.ViewModels
+namespace WemStudio.ViewModels
 {
     public sealed class ShellViewModel : Conductor<IScreen>.Collection.OneActive
     {
@@ -20,7 +21,7 @@ namespace WemManagementStudio.ViewModels
             // TODO: refactor
             Machines = new BindableCollection<MachineViewModel>(machines.FindAll().Select(x => new MachineViewModel(x, machines)).ToList());
 
-            DisplayName = "WEM Studio";
+            DisplayName = "Wem Studio";
         }
 
         public BindableCollection<MachineViewModel> Machines { get; }

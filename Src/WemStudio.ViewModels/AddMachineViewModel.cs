@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Caliburn.Micro;
-using WemManagementStudio.Data;
+using WemStudio.Data;
+using WemStudio.Domain;
 
-namespace WemManagementStudio.ViewModels
+namespace WemStudio.ViewModels
 {
     public sealed class AddMachineViewModel : Screen
     {
@@ -19,11 +20,11 @@ namespace WemManagementStudio.ViewModels
 
             _machines = machines;
 
-            MachineType = new[] { WemManagementStudio.MachineType.Broker, WemManagementStudio.MachineType.Agent, WemManagementStudio.MachineType.Console };
+            MachineType = new[] { Domain.MachineType.Broker, Domain.MachineType.Agent, Domain.MachineType.Console };
 
             _machine = new Machine();
 
-            DisplayName = "Add new Vm";
+            DisplayName = "Add new machine";
         }
 
         public string MachineName

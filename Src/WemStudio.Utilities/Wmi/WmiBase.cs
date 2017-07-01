@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Management;
 
-namespace WemManagementStudio.Utilities.Wmi
+namespace WemStudio.Utilities.Wmi
 {
     public abstract class WmiBase
     {

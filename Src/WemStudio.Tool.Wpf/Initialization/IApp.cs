@@ -1,4 +1,4 @@
-﻿namespace WemManagementStudio.Wpf.Initialization
+﻿namespace WemStudio.Tool.Wpf.Initialization
 {
     public interface IApp
     {

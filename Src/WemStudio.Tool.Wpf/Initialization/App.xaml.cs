@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace WemManagementStudio.Wpf.Initialization
+namespace WemStudio.Tool.Wpf.Initialization
 {
     /// <summary>
     /// Interaction logic for App.xaml

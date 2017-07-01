@@ -21,20 +21,20 @@
     },
 
     {
-      "type": "WemManagementStudio.Wpf.Initialization.Bootstrapper, WemManagementStudio.Wpf",
+      "type": "WemStudio.Tool.Wpf.Initialization.Bootstrapper, WemStudio",
       "services": [
         {
-          "type": "WemManagementStudio.Wpf.Initialization.IBootstrapper, WemManagementStudio.Wpf"
+          "type": "WemStudio.Tool.Wpf.Initialization.IBootstrapper, WemStudio"
         }
       ]
     },
 
     {
-      "type": " WemManagementStudio.Wpf.Initialization.App, WemManagementStudio.Wpf",
+      "type": " WemStudio.Tool.Wpf.Initialization.App, WemStudio",
       "services": 
       [
         {
-          "type": " WemManagementStudio.Wpf.Initialization.IApp, WemManagementStudio.Wpf"
+          "type": " WemStudio.Tool.Wpf.Initialization.IApp, WemStudio"
         }
       ]
     }

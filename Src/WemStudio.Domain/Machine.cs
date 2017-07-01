@@ -1,4 +1,4 @@
-﻿namespace WemManagementStudio
+﻿namespace WemStudio.Domain
 {
     public class Machine
     {

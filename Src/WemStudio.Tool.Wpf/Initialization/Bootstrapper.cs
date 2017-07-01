@@ -5,10 +5,10 @@ using System.Reflection;
 using System.Windows;
 using Autofac;
 using Caliburn.Micro;
-using WemManagementStudio.ViewModels;
-using WemManagementStudio.Views;
+using WemStudio.ViewModels;
+using WemStudio.Views;
 
-namespace WemManagementStudio.Wpf.Initialization
+namespace WemStudio.Tool.Wpf.Initialization
 {
     public sealed class Bootstrapper : BootstrapperBase, IBootstrapper
     {

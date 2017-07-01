@@ -1,7 +1,6 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
-namespace WemManagementStudio.Views
+namespace WemStudio.Views
 {
     /// <summary>
     /// Interaction logic for AddMachineView.xaml

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using System.Security.Principal;
 
-namespace WemManagementStudio.Utilities
+namespace WemStudio.Utilities
 {
     public sealed class Impersonation : IDisposable
     {

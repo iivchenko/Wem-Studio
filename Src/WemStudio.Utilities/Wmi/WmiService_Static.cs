@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace WemManagementStudio.Utilities.Wmi
+namespace WemStudio.Utilities.Wmi
 {
     public sealed partial class WmiService
     {

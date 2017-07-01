@@ -5,11 +5,12 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Threading.Tasks;
 using Caliburn.Micro;
-using WemManagementStudio.Data;
-using WemManagementStudio.Utilities;
-using WemManagementStudio.Utilities.Wmi;
+using WemStudio.Data;
+using WemStudio.Domain;
+using WemStudio.Utilities;
+using WemStudio.Utilities.Wmi;
 
-namespace WemManagementStudio.ViewModels
+namespace WemStudio.ViewModels
 {
     public sealed class MachineViewModel : Screen
     {

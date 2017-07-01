@@ -1,19 +1,19 @@
 ﻿{
-  "defaultAssembly": "WemManagementStudio.Data",
+  "defaultAssembly": "WemStudio.Data",
 
   "components": 
   [
 
     {
-      "type": "WemManagementStudio.Data.VmContext",
+      "type": "WemStudio.Data.VmContext",
       "instanceScope": "single-instance"
     },
 
     {
-      "type": "WemManagementStudio.Data.MachineRepository",
+      "type": "WemStudio.Data.MachineRepository",
       "services": [
         {
-          "type": " WemManagementStudio.Data.IRepository`2[[WemManagementStudio.Machine, WemManagementStudio],[System.Int64, mscorlib]]",
+          "type": " WemStudio.Data.IRepository`2[[WemStudio.Domain.Machine, WemStudio.Domain],[System.Int64, mscorlib]]",
           "instanceScope": "single-instance"
         }
       ]

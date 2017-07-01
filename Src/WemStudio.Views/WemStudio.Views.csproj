@@ -7,8 +7,8 @@
     <ProjectGuid>{3D3F1225-3ACF-4446-90EE-52308BF50711}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WemManagementStudio.Views</RootNamespace>
-    <AssemblyName>WemManagementStudio.Views</AssemblyName>
+    <RootNamespace>WemStudio.Views</RootNamespace>
+    <AssemblyName>WemStudio.Views</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

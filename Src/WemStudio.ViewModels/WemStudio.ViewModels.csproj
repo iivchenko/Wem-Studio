@@ -7,8 +7,8 @@
     <ProjectGuid>{6E97A7C5-B112-471B-8C86-1E90E5027664}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WemManagementStudio.ViewModels</RootNamespace>
-    <AssemblyName>WemManagementStudio.ViewModels</AssemblyName>
+    <RootNamespace>WemStudio.ViewModels</RootNamespace>
+    <AssemblyName>WemStudio.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

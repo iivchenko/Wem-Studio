@@ -7,8 +7,8 @@
     <ProjectGuid>{63E3D447-841C-4121-BC4E-E3A3DC73A502}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WemManagementStudio</RootNamespace>
-    <AssemblyName>WemManagementStudio</AssemblyName>
+    <RootNamespace>WemStudio.Domain</RootNamespace>
+    <AssemblyName>WemStudio.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

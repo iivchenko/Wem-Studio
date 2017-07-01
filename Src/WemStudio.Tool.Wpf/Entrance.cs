@@ -2,9 +2,9 @@
 using Autofac;
 using Autofac.Configuration;
 using Microsoft.Extensions.Configuration;
-using WemManagementStudio.Wpf.Initialization;
+using WemStudio.Tool.Wpf.Initialization;
 
-namespace WemManagementStudio.Wpf
+namespace WemStudio.Tool.Wpf
 {
     public static class Entrance
     {
