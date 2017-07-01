@@ -79,11 +79,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WemManagementStudio.ViewModels\WemManagementStudio.ViewModels.csproj">
+    <ProjectReference Include="..\WemStudio.ViewModels\WemStudio.ViewModels.csproj">
       <Project>{6e97a7c5-b112-471b-8c86-1e90e5027664}</Project>
       <Name>WemManagementStudio.ViewModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WemManagementStudio\WemManagementStudio.csproj">
+    <ProjectReference Include="..\WemStudio.Domain\WemStudio.Domain.csproj">
       <Project>{63e3d447-841c-4121-bc4e-e3a3dc73a502}</Project>
       <Name>WemManagementStudio</Name>
     </ProjectReference>

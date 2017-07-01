@@ -232,15 +232,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WemManagementStudio.ViewModels\WemManagementStudio.ViewModels.csproj">
+    <ProjectReference Include="..\WemStudio.ViewModels\WemStudio.ViewModels.csproj">
       <Project>{6e97a7c5-b112-471b-8c86-1e90e5027664}</Project>
       <Name>WemManagementStudio.ViewModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WemManagementStudio.Views\WemManagementStudio.Views.csproj">
+    <ProjectReference Include="..\WemStudio.Views\WemStudio.Views.csproj">
       <Project>{3d3f1225-3acf-4446-90ee-52308bf50711}</Project>
       <Name>WemManagementStudio.Views</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WemManagementStudio\WemManagementStudio.csproj">
+    <ProjectReference Include="..\WemStudio.Domain\WemStudio.Domain.csproj">
       <Project>{63e3d447-841c-4121-bc4e-e3a3dc73a502}</Project>
       <Name>WemManagementStudio</Name>
     </ProjectReference>
@@ -263,9 +263,7 @@
   <ItemGroup>
     <Resource Include="Resources\Main.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

@@ -69,15 +69,15 @@
     <Compile Include="ShellViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WemManagementStudio.Data\WemManagementStudio.Data.csproj">
+    <ProjectReference Include="..\WemStudio.Data\WemStudio.Data.csproj">
       <Project>{e7643714-20cc-41ca-9521-2167fb326f02}</Project>
       <Name>WemManagementStudio.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WemManagementStudio.Utilities\WemManagementStudio.Utilities.csproj">
+    <ProjectReference Include="..\WemStudio.Utilities\WemStudio.Utilities.csproj">
       <Project>{c4cb5b33-fb50-4ff2-88b7-6b1f1e37bcad}</Project>
       <Name>WemManagementStudio.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WemManagementStudio\WemManagementStudio.csproj">
+    <ProjectReference Include="..\WemStudio.Domain\WemStudio.Domain.csproj">
       <Project>{63e3d447-841c-4121-bc4e-e3a3dc73a502}</Project>
       <Name>WemManagementStudio</Name>
     </ProjectReference>
