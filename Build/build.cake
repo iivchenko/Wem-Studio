@@ -1,14 +1,14 @@
 Task("NuGet")    
     .Does(() =>
 {
-    NuGetRestore("../Src/WEMMS.sln");
+    NuGetRestore("../Src/WemStudio.sln");
 });
 
 Task("Default")
   .IsDependentOn("NuGet")
   .Does(() =>
 {
-  MSBuild("../Src/WEMMS.sln");
+  MSBuild("../Src/WemStudio.sln");
 });
 
 RunTarget("Default");

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio", "WemManagementStudio\WemManagementStudio.csproj", "{63E3D447-841C-4121-BC4E-E3A3DC73A502}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Domain", "WemStudio.Domain\WemStudio.Domain.csproj", "{63E3D447-841C-4121-BC4E-E3A3DC73A502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.Wpf", "WemManagementStudio.WPF\WemManagementStudio.Wpf.csproj", "{870C2F56-6984-48F5-B821-400FE4AE7DBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Wpf", "WemStudio.Tool.Wpf\WemStudio.Tool.Wpf.csproj", "{870C2F56-6984-48F5-B821-400FE4AE7DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.ViewModels", "WemManagementStudio.ViewModels\WemManagementStudio.ViewModels.csproj", "{6E97A7C5-B112-471B-8C86-1E90E5027664}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.ViewModels", "WemStudio.ViewModels\WemStudio.ViewModels.csproj", "{6E97A7C5-B112-471B-8C86-1E90E5027664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.Views", "WemManagementStudio.Views\WemManagementStudio.Views.csproj", "{3D3F1225-3ACF-4446-90EE-52308BF50711}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Views", "WemStudio.Views\WemStudio.Views.csproj", "{3D3F1225-3ACF-4446-90EE-52308BF50711}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.Data", "WemManagementStudio.Data\WemManagementStudio.Data.csproj", "{E7643714-20CC-41CA-9521-2167FB326F02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Data", "WemStudio.Data\WemStudio.Data.csproj", "{E7643714-20CC-41CA-9521-2167FB326F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.Utilities", "WemManagementStudio.Utilities\WemManagementStudio.Utilities.csproj", "{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Utilities", "WemStudio.Utilities\WemStudio.Utilities.csproj", "{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
