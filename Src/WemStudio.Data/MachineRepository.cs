@@ -9,9 +9,9 @@ namespace WemStudio.Data
 {
     public sealed class MachineRepository : IRepository<Machine, long>
     {
-        private readonly VMContext _context;
+        private readonly WemStudioContext _context;
 
-        public MachineRepository(VMContext context)
+        public MachineRepository(WemStudioContext context)
         {
             if (context == null)
             {

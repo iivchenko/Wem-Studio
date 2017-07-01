@@ -5,7 +5,7 @@
   [
 
     {
-      "type": "WemStudio.Data.VmContext",
+      "type": "WemStudio.Data.WemStudioContext",
       "instanceScope": "single-instance"
     },
 
