@@ -1,0 +1,14 @@
+﻿{
+  "defaultAssembly": "WemStudio.ViewModels",
+  
+  "components": 
+  [
+    {
+      "type": "WemStudio.ViewModels.ShellViewModel"
+    },
+
+    {
+      "type": "WemStudio.ViewModels.AddMachineViewModel"
+    }
+  ]
+}

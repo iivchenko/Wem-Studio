@@ -1,0 +1,42 @@
+{
+  "components": 
+  [
+    {
+      "type": "Caliburn.Micro.WindowManager,Caliburn.Micro.Platform",
+      "services":
+      [
+        {
+          "type": "Caliburn.Micro.IWindowManager,Caliburn.Micro.Platform"
+        }
+      ]
+    },
+
+    {
+      "type": "Caliburn.Micro.EventAggregator,Caliburn.Micro",
+      "services": [
+        {
+          "type": "Caliburn.Micro.IEventAggregator,Caliburn.Micro"
+        }
+      ]
+    },
+
+    {
+      "type": "WemStudio.Tool.Wpf.Initialization.Bootstrapper, WemStudio",
+      "services": [
+        {
+          "type": "WemStudio.Tool.Wpf.Initialization.IBootstrapper, WemStudio"
+        }
+      ]
+    },
+
+    {
+      "type": " WemStudio.Tool.Wpf.Initialization.App, WemStudio",
+      "services": 
+      [
+        {
+          "type": " WemStudio.Tool.Wpf.Initialization.IApp, WemStudio"
+        }
+      ]
+    }
+  ]
+}

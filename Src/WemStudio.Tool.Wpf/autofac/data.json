@@ -1,0 +1,23 @@
+﻿{
+  "defaultAssembly": "WemStudio.Data",
+
+  "components": 
+  [
+
+    {
+      "type": "WemStudio.Data.WemStudioContext",
+      "instanceScope": "single-instance"
+    },
+
+    {
+      "type": "WemStudio.Data.MachineRepository",
+      "services": [
+        {
+          "type": " WemStudio.Data.IRepository`2[[WemStudio.Domain.Machine, WemStudio.Domain],[System.Int64, mscorlib]]",
+          "instanceScope": "single-instance"
+        }
+      ]
+    }
+
+  ]
+}

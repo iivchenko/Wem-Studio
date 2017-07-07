@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Domain", "WemStudio.Domain\WemStudio.Domain.csproj", "{63E3D447-841C-4121-BC4E-E3A3DC73A502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Wpf", "WemStudio.Tool.Wpf\WemStudio.Tool.Wpf.csproj", "{870C2F56-6984-48F5-B821-400FE4AE7DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.ViewModels", "WemStudio.ViewModels\WemStudio.ViewModels.csproj", "{6E97A7C5-B112-471B-8C86-1E90E5027664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Views", "WemStudio.Views\WemStudio.Views.csproj", "{3D3F1225-3ACF-4446-90EE-52308BF50711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Data", "WemStudio.Data\WemStudio.Data.csproj", "{E7643714-20CC-41CA-9521-2167FB326F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemStudio.Utilities", "WemStudio.Utilities\WemStudio.Utilities.csproj", "{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemManagementStudio.Actions", "WemManagementStudio.Actions\WemManagementStudio.Actions.csproj", "{D662B917-383B-44EE-91AB-0FF482CDD46D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E3D447-841C-4121-BC4E-E3A3DC73A502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870C2F56-6984-48F5-B821-400FE4AE7DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E97A7C5-B112-471B-8C86-1E90E5027664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E97A7C5-B112-471B-8C86-1E90E5027664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E97A7C5-B112-471B-8C86-1E90E5027664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E97A7C5-B112-471B-8C86-1E90E5027664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3F1225-3ACF-4446-90EE-52308BF50711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3F1225-3ACF-4446-90EE-52308BF50711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3F1225-3ACF-4446-90EE-52308BF50711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3F1225-3ACF-4446-90EE-52308BF50711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7643714-20CC-41CA-9521-2167FB326F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7643714-20CC-41CA-9521-2167FB326F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7643714-20CC-41CA-9521-2167FB326F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7643714-20CC-41CA-9521-2167FB326F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CB5B33-FB50-4FF2-88B7-6B1F1E37BCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D662B917-383B-44EE-91AB-0FF482CDD46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D662B917-383B-44EE-91AB-0FF482CDD46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D662B917-383B-44EE-91AB-0FF482CDD46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D662B917-383B-44EE-91AB-0FF482CDD46D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
