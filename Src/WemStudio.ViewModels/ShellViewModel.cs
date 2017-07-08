@@ -21,6 +21,16 @@ namespace WemStudio.ViewModels
             // TODO: refactor
             Machines = new BindableCollection<MachineViewModel>(machines.FindAll().Select(x => new MachineViewModel(x, machines)).ToList());
 
+            _machines.Modified += (sender, args) =>
+            {
+                switch (args.EntityStatus)
+                {
+                    case RepositoryEntityStatus.New:
+                        Machines.Add(new MachineViewModel(args.Entity, _machines));
+                        break;
+                }
+            };
+
             DisplayName = "Wem Studio";
         }
 
@@ -47,17 +57,7 @@ namespace WemStudio.ViewModels
 
         public void AddMachine()
         {
-            if (_windows.ShowDialog(IoC.Get<AddMachineViewModel>()) == true)
-            {
-                // TODO: Donesn't work!
-                //foreach (var newMachine in _machines.Find(x => Machines.All(y => x.Id != y.Id)).ToList())
-                foreach (var newMachine in _machines.FindAll().Where(x => Machines.All(y => x.Id != y.Id)).ToList())
-                {
-                    Machines.Add(new MachineViewModel(newMachine, _machines));
-                }
-
-                NotifyOfPropertyChange(() => Machines);
-            }
+            _windows.ShowDialog(IoC.Get<AddMachineViewModel>());
         }
 
         // TODO: Something with remove! Investigate it.
