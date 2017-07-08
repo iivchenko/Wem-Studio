@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 using Caliburn.Micro;
 using WemStudio.Data;
 using WemStudio.Domain;
@@ -57,7 +59,13 @@ namespace WemStudio.ViewModels
 
         public void AddMachine()
         {
-            _windows.ShowDialog(IoC.Get<AddMachineViewModel>());
+            var settings = new Dictionary<string, object>
+            {
+                { "ResizeMode", ResizeMode.NoResize },
+                { "WindowStyle", WindowStyle.ToolWindow }
+            };
+
+            _windows.ShowDialog(IoC.Get<AddMachineViewModel>(), null, settings);
         }
 
         // TODO: Something with remove! Investigate it.

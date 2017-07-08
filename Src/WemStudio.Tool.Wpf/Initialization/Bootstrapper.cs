@@ -51,7 +51,13 @@ namespace WemStudio.Tool.Wpf.Initialization
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
-            DisplayRootViewFor<ShellViewModel>();
+            var settings = new Dictionary<string, object>
+            {
+                { "MinWidth", 800 },
+                { "MinHeight", 600 }
+            };
+
+            DisplayRootViewFor<ShellViewModel>(settings);
         }
     }
 }

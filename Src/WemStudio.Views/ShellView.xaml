@@ -14,8 +14,8 @@
         </Grid.ColumnDefinitions>
 
         <DockPanel Grid.Column="0" Margin="5,5,5,5">
-            <Button x:Name="AddMachine" Height="30" DockPanel.Dock="Bottom">+</Button>
-            <ListView x:Name="Machines">
+            <Button x:Name="AddMachine" Height="30" DockPanel.Dock="Bottom" Margin="5,0,5,5">+</Button>
+            <ListView x:Name="Machines" Margin="5,5,5,0">
                 <ListView.ContextMenu>
                     <ContextMenu>
                         <MenuItem cal:Message.Attach="RemoveMachine" Header="Remove"/>
