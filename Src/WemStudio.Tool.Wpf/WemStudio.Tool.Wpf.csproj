@@ -212,15 +212,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="autofac\init.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="autofac\data.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="autofac\views.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -232,6 +223,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WemStudio.Data\WemStudio.Data.csproj">
+      <Project>{E7643714-20CC-41CA-9521-2167FB326F02}</Project>
+      <Name>WemStudio.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WemStudio.ViewModels\WemStudio.ViewModels.csproj">
       <Project>{6e97a7c5-b112-471b-8c86-1e90e5027664}</Project>
       <Name>WemManagementStudio.ViewModels</Name>

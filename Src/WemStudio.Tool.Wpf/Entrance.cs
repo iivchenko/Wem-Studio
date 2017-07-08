@@ -1,8 +1,10 @@
 ﻿using System;
 using Autofac;
-using Autofac.Configuration;
-using Microsoft.Extensions.Configuration;
+using Caliburn.Micro;
+using WemStudio.Data;
+using WemStudio.Domain;
 using WemStudio.Tool.Wpf.Initialization;
+using WemStudio.ViewModels;
 
 namespace WemStudio.Tool.Wpf
 {
@@ -14,30 +16,58 @@ namespace WemStudio.Tool.Wpf
         [STAThread]
         public static void Main()
         {
-            var configInit = new ConfigurationBuilder();
-            var configViewModel = new ConfigurationBuilder();
-            var configData = new ConfigurationBuilder();
-
-            configInit.AddJsonFile(@"autofac\init.json");
-            configViewModel.AddJsonFile(@"autofac\views.json");
-            configData.AddJsonFile(@"autofac\data.json");
-
-            var moduleInit = new ConfigurationModule(configInit.Build());
-            var moduleViewModel = new ConfigurationModule(configViewModel.Build());
-            var moduleData = new ConfigurationModule(configData.Build());
-
-            var builder = new ContainerBuilder();
-
-            builder.RegisterModule(moduleInit);
-            builder.RegisterModule(moduleViewModel);
-            builder.RegisterModule(moduleData);
-
-            using (var scope = builder.Build().BeginLifetimeScope())
+            using (var scope = InitializeContainer())
             {
                 var app = scope.Resolve<IApp>();
                 app.Initialize();
                 app.Run();
             }
+        }
+
+        private static ILifetimeScope InitializeContainer()
+        {
+            var builder = new ContainerBuilder();
+            
+            // init
+            builder
+                .RegisterType<WindowManager>()
+                .As<IWindowManager>()
+                .SingleInstance();
+
+            builder
+                .RegisterType<Bootstrapper>()
+                .As<IBootstrapper>()
+                .SingleInstance();
+
+            builder
+                .RegisterType<App>()
+                .As<IApp>()
+                .SingleInstance();
+
+            // Data
+            builder
+                .RegisterType<WemStudioContext>()
+                .SingleInstance();
+
+            builder
+                .RegisterType<MachineRepository>()
+                .As<IRepository<Machine, long>>()
+                .SingleInstance();
+
+            builder
+                .RegisterType<NotifiableRepository<Machine, long>>()
+                .As<INotifiableRepository<Machine, long>>()
+                .SingleInstance();
+
+            // views
+            builder
+                .RegisterType<ShellViewModel>()
+                .SingleInstance();
+
+            builder
+                .RegisterType<AddMachineViewModel>();
+
+            return builder.Build().BeginLifetimeScope();
         }
     }
 }
