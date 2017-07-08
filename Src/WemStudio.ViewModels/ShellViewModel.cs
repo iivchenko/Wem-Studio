@@ -8,12 +8,12 @@ namespace WemStudio.ViewModels
     public sealed class ShellViewModel : Conductor<IScreen>.Collection.OneActive
     {
         private readonly IWindowManager _windows;
-        private readonly IRepository<Machine, long> _machines;
+        private readonly INotifiableRepository<Machine, long> _machines;
 
         private MachineViewModel _selectedMachine;
 
 
-        public ShellViewModel(IWindowManager windows, IRepository<Machine, long> machines)
+        public ShellViewModel(IWindowManager windows, INotifiableRepository<Machine, long> machines)
         {
             _windows = windows;
             _machines = machines;
