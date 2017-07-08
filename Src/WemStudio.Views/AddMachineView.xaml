@@ -14,16 +14,14 @@
         
         <Grid Grid.Row="0">
             <Grid.Resources>
-                <Style TargetType="{x:Type TextBlock}">
+                <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
                     <Setter Property="Margin" Value="5,5,5,5"/>
                 </Style>
-                <Style TargetType="{x:Type PasswordBox}">
+                <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
                     <Setter Property="Margin" Value="5,5,5,5"/>
+                    <Setter Property="Height" Value="25"/>
                 </Style>
-                <Style TargetType="{x:Type TextBox}">
-                    <Setter Property="Margin" Value="5,5,5,5"/>
-                </Style>
-                <Style TargetType="{x:Type ComboBox}">
+                <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type ComboBox}}">
                     <Setter Property="Margin" Value="5,5,5,5"/>
                 </Style>
             </Grid.Resources>
@@ -65,7 +63,7 @@
         <Grid Grid.Row="1">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <StackPanel.Resources>
-                    <Style TargetType="{x:Type Button}">
+                    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
                         <Setter Property="Margin" Value="5,5,5,5"/>
                         <Setter Property="Width" Value="75"></Setter>
                     </Style>
