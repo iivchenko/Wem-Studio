@@ -17,6 +17,16 @@
           "instanceScope": "single-instance"
         }
       ]
+    },
+
+    {
+      "type": "WemStudio.Data.NotifiableRepository`2[[WemStudio.Domain.Machine, WemStudio.Domain],[System.Int64, mscorlib]]",
+      "services": [
+        {
+          "type": "WemStudio.Data.INotifiableRepository`2[[WemStudio.Domain.Machine, WemStudio.Domain],[System.Int64, mscorlib]]",
+          "instanceScope": "single-instance"
+        }
+      ]
     }
 
   ]
