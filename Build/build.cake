@@ -8,7 +8,7 @@ Task("Default")
   .IsDependentOn("NuGet")
   .Does(() =>
 {
-  MSBuild("../Src/WemStudio.sln");
+  MSBuild("../Src/WemStudio.sln",  new MSBuildSettings().SetConfiguration("Release"));
 });
 
 RunTarget("Default");
