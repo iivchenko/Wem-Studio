@@ -1,5 +1,5 @@
 var target = Argument("target", "Default");
-var configuration = Argument("configuration", "Debug");
+var configuration = Argument("configuration", "Release");
 
 Task("NuGet")    
     .Does(() =>
@@ -11,7 +11,7 @@ Task("Build")
   .IsDependentOn("NuGet")
   .Does(() =>
 {
-  MSBuild("../Src/WemStudio.sln",  new MSBuildSettings().SetConfiguration("Release"));
+  MSBuild("../Src/WemStudio.sln",  new MSBuildSettings().SetConfiguration(configuration));
 });
 
 Task("Zip")
