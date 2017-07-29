@@ -61,9 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="INotifiableRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="MachineRepository.cs" />
+    <Compile Include="NotifiableRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryModifiedEventArgs.cs" />
     <Compile Include="WemStudioContext.cs" />
   </ItemGroup>
   <ItemGroup>

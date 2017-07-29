@@ -15,13 +15,13 @@ namespace WemStudio.ViewModels
     public sealed class MachineViewModel : Screen
     {
         private readonly Machine _machine;
-        private readonly IRepository<Machine, long> _machines;
+        private readonly INotifiableRepository<Machine, long> _machines;
        
         private bool _canDeploy;
 
         private readonly IDictionary<MachineType, Func<MachineViewModel, Task>> _deployManager;
 
-        public MachineViewModel(Machine machine, IRepository<Machine, long> machines)
+        public MachineViewModel(Machine machine, INotifiableRepository<Machine, long> machines)
         {
             _machine = machine;
             _machines = machines;

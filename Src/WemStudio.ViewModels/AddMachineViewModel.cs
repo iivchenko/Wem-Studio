@@ -8,10 +8,10 @@ namespace WemStudio.ViewModels
 {
     public sealed class AddMachineViewModel : Screen
     {
-        private readonly IRepository<Machine, long> _machines;
+        private readonly INotifiableRepository<Machine, long> _machines;
         private readonly Machine _machine;
 
-        public AddMachineViewModel(IRepository<Machine, long> machines)
+        public AddMachineViewModel(INotifiableRepository<Machine, long> machines)
         {
             if (machines == null)
             {
