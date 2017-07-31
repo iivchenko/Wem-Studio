@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOperationProperties.cs" />
     <Compile Include="OperationsCreator.cs" />
     <Compile Include="Actions\CopyFiles.cs" />
     <Compile Include="Actions\IOperatopImplementation.cs" />
@@ -49,7 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WemManagementStudio\WemManagementStudio.csproj">
+    <ProjectReference Include="..\WemStudio.Domain\WemStudio.Domain.csproj">
       <Project>{63e3d447-841c-4121-bc4e-e3a3dc73a502}</Project>
       <Name>WemManagementStudio</Name>
     </ProjectReference>

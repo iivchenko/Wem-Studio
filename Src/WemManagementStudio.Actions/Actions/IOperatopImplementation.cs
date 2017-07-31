@@ -4,6 +4,6 @@ namespace WemManagementStudio.Actions.Actions
 {
     public interface IOperatopImplementation
     {
-        Task Execute();
+        Task<bool> Execute();
     }
 }

@@ -5,7 +5,7 @@ namespace WemManagementStudio.Actions.Actions
 {
     public class CopyFiles : IOperatopImplementation
     {
-        public Task Execute()
+        public Task<bool> Execute()
         {
             throw new NotImplementedException();
         }
